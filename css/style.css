@@ -1,0 +1,343 @@
+/****************************** fuentes de google fonts ******************************/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;900&display=swap');
+
+body{
+    padding: 0.8rem;
+}
+
+/****************************** Encabezado ******************************/
+header{
+    background: linear-gradient(to right, rgb(157, 157, 240), rgb(77, 250, 77));
+    border-radius: 10px;
+}
+#contenedor-header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#imagen-logo{ 
+    margin: 20px 0;
+    display: inline;
+    /*width: 200px;*/
+    width: 12rem;   /* 1rem = 16px -> 12*16 = 192px */
+}
+
+#titulo{
+    margin: auto;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    color: aliceblue;
+}
+
+#lista-menu{
+    margin: auto;
+    padding: 0; /* por defecto tiene un padding izquierdo de 40 */
+    list-style: none;
+    display: flex; /* para que las imagenes se muestren en linea */
+}
+
+.link-menu{
+    margin: 0 0.9rem;
+    text-decoration: none;
+    color: rgb(238, 247, 221);
+    font-family: 'Gabarito', cursive;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.link-menu:hover{
+    color: aqua;
+}
+
+
+/****************************** Contenido principal ******************************/
+.carrusel{
+    width: 90%;
+    border-radius: 15px;
+}
+
+#contenedor-imagenes-animales{/* para que el contenido se pueda centrar horizontalmente */
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+}
+#lista-imagenes-animales{
+    padding: 0;
+    list-style: none;
+    display: flex;/* para que las imagenes se muestren en linea */
+    margin-bottom: 0;/**/
+    gap: 1rem;
+}
+.imagen-animal{
+    width: 100%;
+}
+
+#seccion-turnos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+#imagen-turno{
+    width: 100%;
+}
+#texto-turno{
+    color: beige;
+    text-align: justify;
+}
+
+
+#contenedor-perros, #contenedor-gatos, #contenedor-accesorios{
+    display: flex;
+    gap: 1.25rem;
+}
+
+.subtitulo-main{
+    color: beige;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.contenedor-imagen{ /* para centrar la imagnen */
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-servicio{
+    width: 55%;
+}
+
+.descripcion{
+    font-family: 'Gabarito', cursive;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: beige;
+    text-align: center;
+}
+
+.precio{
+    font-family: 'Gabarito', cursive;
+    font-weight: 900;
+    font-size: 2rem;
+    color: red;
+    text-align: center;
+    /* para centrar el elemento */
+    display: block;
+    margin: 0 auto;
+}
+
+.servicio{
+    background-color: rgb(147, 206, 166);
+    border-radius: 10px;
+    padding: 1rem 0rem;
+}
+
+.boton{
+    padding: 0.6rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: beige;
+    background-color: rgb(60, 60, 192);
+    border: none;
+    border-radius: 0.5rem;
+    display: block;/* para convertir el elemento de linea en uno de bloque */
+    margin: 0 auto;/* para centrar el boton horizontalmente (funciona porque ahora es un elemento de bloque) */
+}
+.boton:hover{
+    background-color: beige;
+    color: rgb(60, 60, 192);
+    border-style: 0.16rem solid rgb(60, 60, 192);
+}
+
+#seccion-mapa{
+    margin-top: 5rem;
+}
+iframe{
+    width: 100%;
+    height: 25rem;
+}
+
+/****************************** Pie de pagina ******************************/
+footer{
+    background-color: darkslategrey;
+    border-radius: 10px;
+    padding: 2rem 0.3rem;
+}
+.icono-footer{
+    width: 2rem;
+}
+h3, h4{
+    text-align: center;
+    margin: 5px;
+    color: beige;
+    font-family: 'Rubik', sans-serif;
+}
+h3{
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+h4{
+    font-size: 1rem;
+}
+
+#lista-iconos-footer{
+    list-style: none;/* para que desaparezca el icono(punto) de la lista */
+    display: flex;/* para que los items se posicionen horizontalmente */
+    justify-content: center;/* para centrar los items horizontalmente */
+    padding: 0;/* para eliminar el padding-left que tiene por defecto */
+    gap: 1.25rem;/* para que haya un espacio entre los items */
+    margin-bottom: 3rem;
+}
+
+/* para agregar lineas horizontales a los costados de los iconos */
+#lista-iconos-footer::before,
+#lista-iconos-footer::after {
+    content: "";
+    height: 1px;
+    background-color: white;
+    flex-grow: 1;
+    margin: auto;
+}
+#contenedor-info-footer{/* para ubicar los item uno al lado del otro y centrarlos horizontalmente*/
+    display: flex;
+    justify-content: center;
+}
+
+h5{
+    margin: 0.3125rem 0.625rem;
+    font-size: 0.8rem;
+}
+h5 a{
+    color: beige;
+}
+
+
+/******************************      media queries       ******************************/
+@media(max-width: 720px){
+    html{/* para que se ajuesten las medidas rem */
+        font-size: 12px;
+    }
+    /******************************* footer *******************************/
+    /*  para borrar las lineas horizontales a los contados de los iconos    */
+    #lista-iconos-footer::before,
+    #lista-iconos-footer::after{
+        height: 0;
+    }
+
+}
+
+@media(max-width: 540px){
+    html{
+        font-size: 8px;
+    }
+    /* para que no se muestre el carrusel */
+    #carouselExample{
+        display: none;
+    }
+}
+
+@media(max-width: 480px){
+    html{
+        font-size: 6px;
+    }
+    /******************************* encabezado *******************************/
+    #imagen-logo{/* para que no se muestre el logo */
+        display: none;
+    }
+    #contenedor-header{
+        justify-content: center;
+        padding: 1.5rem 0rem;
+    }
+    #titulo{
+        text-align: center;
+    }
+    /******************************* contenido principal *******************************/
+    #seccion-turnos{/* para que se muetre los elementos uno debajo del otro*/
+        display: block;
+    }
+    #texto-turno{
+        font-size: 1.5rem;
+    }
+    .subtitulo-main{
+        font-size: 3rem;
+    }
+    #contenedor-perros, #contenedor-gatos, #contenedor-accesorios{/* para que se muestre en dos columnas */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .descripcion{
+        font-size: 2.25rem;
+    }
+    .precio{
+        font-size: 3rem;
+    }
+    .boton{
+        font-size: 2rem;
+    }
+    /******************************* pie de pagina *******************************/
+    .icono-footer{
+        width: 4rem;
+    }
+    h4{
+        font-size: 2rem;
+    }
+    h5{
+        font-size: 1.5rem;
+    }
+    h6{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 320px){
+    html{
+        font-size: 4px;
+    }
+    /******************************* encabezado *******************************/
+    #imagen-logo{/* para que no se muestre la imagen del logo*/
+        display: none;
+    }
+    #contenedor-header{
+        justify-content: center;
+        padding: 1.5rem 0rem;
+    }
+    #titulo{
+        text-align: center;
+    }
+    /******************************* contenido principal *******************************/
+    main{
+        margin: 5rem 0rem;
+    }
+    #texto-turno{
+        font-size: 2rem;
+    }
+    .servicio{
+        margin-bottom: 2.5rem;
+    }
+    #contenedor-carrusel, #seccion-mapa{/* para que no apezca el carrusel y el mapa */
+        display: none;
+    }
+    #contenedor-perros, #contenedor-gatos, #contenedor-accesorios{
+        display: block;
+    }
+
+    .descripcion{
+        font-size: 4rem;
+    }
+    .precio{
+        font-size: 5rem;
+    }
+    .boton{
+        font-size: 3rem;
+    }
+
+}
