@@ -239,6 +239,14 @@ h5 a{
     html{
         font-size: 8px;
     }
+    /******************************* encabezado *******************************/
+    #titulo{
+        font-size: 4.5rem;
+    }
+    .link-menu{
+        font-size: 2rem;
+    }
+    /******************************* contenido principal *******************************/
     /* para que no se muestre el carrusel */
     #carouselExample{
         display: none;
@@ -259,16 +267,20 @@ h5 a{
     }
     #titulo{
         text-align: center;
+        font-size: 6rem;
+    }
+    .link-menu{
+        font-size: 2.8rem;
     }
     /******************************* contenido principal *******************************/
     #seccion-turnos{/* para que se muetre los elementos uno debajo del otro*/
         display: block;
     }
     #texto-turno{
-        font-size: 1.5rem;
+        font-size: 2.2rem;
     }
     .subtitulo-main{
-        font-size: 3rem;
+        font-size: 5rem;
     }
     #contenedor-perros, #contenedor-gatos, #contenedor-accesorios{/* para que se muestre en dos columnas */
         display: grid;
@@ -287,14 +299,14 @@ h5 a{
     .icono-footer{
         width: 4rem;
     }
+    h3{
+        font-size: 3rem;
+    }
     h4{
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     h5{
-        font-size: 1.5rem;
-    }
-    h6{
-        font-size: 1rem;
+        font-size: 2rem;
     }
 }
 
@@ -302,23 +314,9 @@ h5 a{
     html{
         font-size: 4px;
     }
-    /******************************* encabezado *******************************/
-    #imagen-logo{/* para que no se muestre la imagen del logo*/
-        display: none;
-    }
-    #contenedor-header{
-        justify-content: center;
-        padding: 1.5rem 0rem;
-    }
-    #titulo{
-        text-align: center;
-    }
     /******************************* contenido principal *******************************/
     main{
         margin: 5rem 0rem;
-    }
-    #texto-turno{
-        font-size: 2rem;
     }
     .servicio{
         margin-bottom: 2.5rem;
