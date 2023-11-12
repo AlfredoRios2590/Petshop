@@ -46,7 +46,7 @@ header{
     color: rgb(238, 247, 221);
     font-family: 'Gabarito', cursive;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .link-menu:hover{
@@ -67,6 +67,7 @@ header{
     border-radius: 10px;
     padding: 1rem;
 }
+
 #lista-imagenes-animales{
     padding: 0;
     list-style: none;
@@ -74,6 +75,7 @@ header{
     margin-bottom: 0;/**/
     gap: 1rem;
 }
+
 .imagen-animal{
     width: 100%;
 }
@@ -85,16 +87,20 @@ header{
     gap: 2rem;
     margin-top: 5rem;
 }
+
 #imagen-turno{
     width: 100%;
 }
+
 #texto-turno{
     color: beige;
     text-align: justify;
+    font-size: 1.5rem;
 }
 
-
-#contenedor-perros, #contenedor-gatos, #contenedor-accesorios{
+#contenedor-perros, 
+#contenedor-gatos, 
+#contenedor-accesorios{
     display: flex;
     gap: 1.25rem;
 }
@@ -138,6 +144,7 @@ header{
     background-color: rgb(147, 206, 166);
     border-radius: 10px;
     padding: 1rem 0rem;
+    margin-bottom: 2rem;
 }
 
 .boton{
@@ -152,6 +159,7 @@ header{
     display: block;/* para convertir el elemento de linea en uno de bloque */
     margin: 0 auto;/* para centrar el boton horizontalmente (funciona porque ahora es un elemento de bloque) */
 }
+
 .boton:hover{
     background-color: beige;
     color: rgb(60, 60, 192);
@@ -161,6 +169,7 @@ header{
 #seccion-mapa{
     margin-top: 5rem;
 }
+
 iframe{
     width: 100%;
     height: 25rem;
@@ -172,19 +181,23 @@ footer{
     border-radius: 10px;
     padding: 2rem 0.3rem;
 }
+
 .icono-footer{
     width: 2rem;
 }
+
 h3, h4{
     text-align: center;
     margin: 5px;
     color: beige;
     font-family: 'Rubik', sans-serif;
 }
+
 h3{
     font-weight: 900;
     font-size: 1.5rem;
 }
+
 h4{
     font-size: 1rem;
 }
@@ -207,6 +220,7 @@ h4{
     flex-grow: 1;
     margin: auto;
 }
+
 #contenedor-info-footer{/* para ubicar los item uno al lado del otro y centrarlos horizontalmente*/
     display: flex;
     justify-content: center;
@@ -216,16 +230,28 @@ h5{
     margin: 0.3125rem 0.625rem;
     font-size: 0.8rem;
 }
+
 h5 a{
     color: beige;
 }
 
 
+/******************************     Turnos     ******************************/
+
 /******************************      media queries       ******************************/
+@media(max-width: 1024px){
+    html{font-size: 14px;}
+}
+
 @media(max-width: 720px){
     html{/* para que se ajuesten las medidas rem */
         font-size: 12px;
     }
+
+    main{
+        padding: 2rem;
+    }
+
     /******************************* footer *******************************/
     /*  para borrar las lineas horizontales a los contados de los iconos    */
     #lista-iconos-footer::before,
@@ -237,19 +263,39 @@ h5 a{
 
 @media(max-width: 540px){
     html{
-        font-size: 8px;
+        font-size: 10px;
     }
     /******************************* encabezado *******************************/
     #titulo{
-        font-size: 4.5rem;
+        text-align: center;
     }
-    .link-menu{
-        font-size: 2rem;
-    }
+
     /******************************* contenido principal *******************************/
     /* para que no se muestre el carrusel */
     #carouselExample{
         display: none;
+    }
+
+    .boton{
+        font-size: 2rem;
+    }
+    
+    /******************************* pie de pagina *******************************/
+    
+    .icono-footer{
+        width: 4rem;
+    }
+
+    h3{
+        font-size: 3rem;
+    }
+
+    h4{
+        font-size: 2.5rem;
+    }
+
+    h5{
+        font-size: 2rem;
     }
 }
 
@@ -257,56 +303,32 @@ h5 a{
     html{
         font-size: 6px;
     }
+
     /******************************* encabezado *******************************/
     #imagen-logo{/* para que no se muestre el logo */
         display: none;
     }
+
     #contenedor-header{
         justify-content: center;
         padding: 1.5rem 0rem;
     }
-    #titulo{
-        text-align: center;
-        font-size: 6rem;
+
+    /******************************* contenido principal *******************************/    
+    .subtitulo-main{
+        font-size: 3rem;
+        margin-top: 1.5rem;
     }
-    .link-menu{
-        font-size: 2.8rem;
-    }
-    /******************************* contenido principal *******************************/
+
     #seccion-turnos{/* para que se muetre los elementos uno debajo del otro*/
         display: block;
     }
-    #texto-turno{
-        font-size: 2.2rem;
-    }
-    .subtitulo-main{
-        font-size: 5rem;
-    }
-    #contenedor-perros, #contenedor-gatos, #contenedor-accesorios{/* para que se muestre en dos columnas */
+
+    #contenedor-perros, 
+    #contenedor-gatos, 
+    #contenedor-accesorios{/* para que se muestre en dos columnas */
         display: grid;
         grid-template-columns: 1fr 1fr;
-    }
-    .descripcion{
-        font-size: 2.25rem;
-    }
-    .precio{
-        font-size: 3rem;
-    }
-    .boton{
-        font-size: 2rem;
-    }
-    /******************************* pie de pagina *******************************/
-    .icono-footer{
-        width: 4rem;
-    }
-    h3{
-        font-size: 3rem;
-    }
-    h4{
-        font-size: 2.5rem;
-    }
-    h5{
-        font-size: 2rem;
     }
 }
 
@@ -314,28 +336,16 @@ h5 a{
     html{
         font-size: 4px;
     }
+
     /******************************* contenido principal *******************************/
-    main{
-        margin: 5rem 0rem;
-    }
-    .servicio{
-        margin-bottom: 2.5rem;
-    }
-    #contenedor-carrusel, #seccion-mapa{/* para que no apezca el carrusel y el mapa */
+    #seccion-mapa{/* para que no apezca el carrusel y el mapa */
         display: none;
     }
-    #contenedor-perros, #contenedor-gatos, #contenedor-accesorios{
-        display: block;
-    }
 
-    .descripcion{
-        font-size: 4rem;
-    }
-    .precio{
-        font-size: 5rem;
-    }
-    .boton{
-        font-size: 3rem;
+    #contenedor-perros, 
+    #contenedor-gatos, 
+    #contenedor-accesorios{
+        display: block;
     }
 
 }
