@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encuentra todo lo que necesitas para tu mascota en nuestro petshop. Ofrecemos una amplia gama de productos. Desde alimentos y accesorios hasta servicios de cuidado. ¡Visítanos y descubre cómo hacer feliz a tu mascota!">
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Petshop</title>
 </head>
-<body class="bg-dark">
+<body>
     <!--Encabezado-->
     <header>
         <div id="contenedor-header">
-            <a href="index.html"><img id="imagen-logo" src="img/logo.png" alt="logo Petshop"></a>
             <div id="contenedor-titulo-menu">
                 <h1 id="titulo">Tienda Petshop</h1>
                 <ul id="lista-menu">
                     <li><a class="link-menu" href="#">Inicio</a></li>
-                    <li><a class="link-menu" href="#">Accesorios</a></li>
-                    <li><a class="link-menu" href="#">Servicios</a></li>
+                    <li><a class="link-menu" href="#seccion-accesorios">Accesorios</a></li>
+                    <li><a class="link-menu" href="#seccion-perros">Servicios</a></li>
                     <li><a class="link-menu" href="pages/turnos.html">Turnos</a></li>
                     <li><a class="link-menu" href="#">Nosotros</a></li>
                 </ul>           
             </div>
-        </div>        
+        </div>      
+        <img id="imagen-header" src="assets/img/animales/gatos.jpg" alt="logo Petshop" width="100%">
     </header>
     
     <!--Contenido principal-->
@@ -34,19 +36,19 @@
                 <div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="img/carrusel/carrusel-1.jpg" class="d-block carrusel" alt="Arnes">
+                            <img src="assets/img/carrusel/carrusel-1.jpg" class="d-block carrusel" alt="Arnes">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/carrusel/carrusel-2.jpg" class="d-block carrusel" alt="comida para gato">
+                            <img src="assets/img/carrusel/carrusel-2.jpg" class="d-block carrusel" alt="comida para gato">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/carrusel/carrusel-3.jpg" class="d-block carrusel" alt="comida para perro">
+                            <img src="assets/img/carrusel/carrusel-3.jpg" class="d-block carrusel" alt="comida para perro">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/carrusel/carrusel-4.jpg" class="d-block carrusel" alt="comida para perro">
+                            <img src="assets/img/carrusel/carrusel-4.jpg" class="d-block carrusel" alt="comida para perro">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/carrusel/carrusel-5.jpg" class="d-block carrusel" alt="comida para perro">
+                            <img src="assets/img/carrusel/carrusel-5.jpg" class="d-block carrusel" alt="comida para perro">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -62,25 +64,27 @@
         </div>
         <div id="contenedor-imagenes-animales">
             <ul id="lista-imagenes-animales">
-                <li><img src="img/aminales/perro.png" alt="Imagen de perro" class="imagen-animal"></li>
-                <li><img src="img/aminales/gato.png" alt="Imagen de gato" class="imagen-animal"></li>
-                <li><img src="img/aminales/ave.png" alt="Imagen de ave" class="imagen-animal"></li>
-                <li><img src="img/aminales/pez.png" alt="Imagen de pez" class="imagen-animal"></li>
-                <li><img src="img/aminales/peqanimal.png" alt="Imagen de animal pequeño" class="imagen-animal"></li>
-                <li><img src="img/aminales/reptil.png" alt="Imagen de reptil" class="imagen-animal"></li>
+                <li><img src="assets/img/animales/perro.png" alt="Imagen de perro" class="imagen-animal"></li>
+                <li><img src="assets/img/animales/gato.png" alt="Imagen de gato" class="imagen-animal"></li>
+                <li><img src="assets/img/animales/ave.png" alt="Imagen de ave" class="imagen-animal"></li>
+                <li><img src="assets/img/animales/pez.png" alt="Imagen de pez" class="imagen-animal"></li>
+                <li><img src="assets/img/animales/peqanimal.png" alt="Imagen de animal pequeño" class="imagen-animal"></li>
+                <li><img src="assets/img/animales/reptil.png" alt="Imagen de reptil" class="imagen-animal"></li>
             </ul>
         </div>
         <section id="seccion-turnos">
-            <div>
-                <img src="img/veterinaria.jpg" alt="Turno veterinaria" id="imagen-turno">
+            <div id="contenedor-imagen-turno">
+                <img src="assets/img/veterinaria/veterinaria.jpg" alt="Turno veterinaria" id="imagen-turno">
             </div>
-            <div id="contenedor-turno">
-                <h2 class="subtitulo-main">Turnos</h2>
-                <p id="texto-turno">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure illum assumenda necessitatibus. Totam sit consectetur ipsum veniam hic iste dolore aut, officiis, dignissimos id explicabo deserunt corrupti illo in inventore.
-                    Repudiandae, unde! Expedita, eligendi, sunt quibusdam ducimus modi voluptatum harum assumenda quis magni iste, iure officiis molestiae! Exercitationem illum, eveniet eum fugit quam vel! Quia explicabo culpa similique maxime earum?
-                </p>
-                <button class="boton" onclick="sacarTurno()">Sacar turno</button>
+            <div>
+                <div id="contenedor-turno">
+                    <h2 class="subtitulo-main">Turnos</h2>
+                    <p id="texto-turno">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure illum assumenda necessitatibus. Totam sit consectetur ipsum veniam hic iste dolore aut, officiis, dignissimos id explicabo deserunt corrupti illo in inventore.
+                        Repudiandae, unde!
+                    </p>
+                    <a href="pages/turnos.html" id="boton-turno">Sacar turno</a>
+                </div>
             </div>
         </section>
         <section id="seccion-perros">
@@ -88,7 +92,7 @@
             <div id="contenedor-perros">
                 <div class="servicio">
                     <div class="contenedor-imagen">
-                        <img src="img/comida/comida-perro.png" alt="comida para perro" class="imagen-servicio">
+                        <img src="assets/img/comida/comida-perro.png" alt="comida para perro" class="imagen-servicio">
                     </div>
                     <p class="descripcion">Comida para perro</p>
                     <strong class="precio">$ 27.000</strong>
@@ -96,7 +100,7 @@
                 </div>
                 <div class="servicio">
                     <div class="contenedor-imagen">
-                        <img src="img/comida/comida-perro.png" alt="comida para perro" class="imagen-servicio">
+                        <img src="assets/img/comida/comida-perro.png" alt="comida para perro" class="imagen-servicio">
                     </div>
                     <p class="descripcion">Comida para perro</p>
                     <strong class="precio">$ 27.000</strong>
@@ -104,7 +108,7 @@
                 </div>
                 <div class="servicio">
                     <div class="contenedor-imagen">
-                        <img src="img/comida/comida-perro.png" alt="comida para perro" class="imagen-servicio">
+                        <img src="assets/img/comida/comida-perro.png" alt="comida para perro" class="imagen-servicio">
                     </div>
                     <p class="descripcion">Comida para perro</p>
                     <strong class="precio">$ 27.000</strong>
@@ -112,7 +116,7 @@
                 </div>
                 <div class="servicio">
                     <div class="contenedor-imagen">
-                        <img src="img/comida/comida-perro.png" alt="comida para perro" class="imagen-servicio">
+                        <img src="assets/img/comida/comida-perro.png" alt="comida para perro" class="imagen-servicio">
                     </div>
                     <p class="descripcion">Comida para perro</p>
                     <strong class="precio">$ 27.000</strong>
@@ -125,7 +129,7 @@
             <div id="contenedor-gatos">
                 <div class="servicio">
                     <div class="contenedor-imagen">
-                        <img src="img/comida/comida-gato-1.png" alt="comida para gato" class="imagen-servicio">
+                        <img src="assets/img/comida/comida-gato-1.png" alt="comida para gato" class="imagen-servicio">
                     </div>
                     <p class="descripcion">Comida para gato</p>
                     <strong class="precio">$ 21.000</strong>
@@ -133,7 +137,7 @@
                 </div>
                 <div class="servicio">
                     <div class="contenedor-imagen">
-                        <img src="img/comida/comida-gato-2.png" alt="comida para gato" class="imagen-servicio">
+                        <img src="assets/img/comida/comida-gato-2.png" alt="comida para gato" class="imagen-servicio">
                     </div>
                     <p class="descripcion">Comida para gato</p>
                     <strong class="precio">$ 21.000</strong>
@@ -141,7 +145,7 @@
                 </div>
                 <div class="servicio">
                     <div class="contenedor-imagen">
-                        <img src="img/comida/comida-gato-2.png" alt="comida para gato" class="imagen-servicio">
+                        <img src="assets/img/comida/comida-gato-2.png" alt="comida para gato" class="imagen-servicio">
                     </div>
                     <p class="descripcion">Comida para gato</p>
                     <strong class="precio">$ 21.000</strong>
@@ -149,7 +153,7 @@
                 </div>
                 <div class="servicio">
                     <div class="contenedor-imagen">
-                        <img src="img/comida/comida-gato-1.png" alt="comida para gato" class="imagen-servicio">
+                        <img src="assets/img/comida/comida-gato-1.png" alt="comida para gato" class="imagen-servicio">
                     </div>
                     <p class="descripcion">Comida para gato</p>
                     <strong class="precio">$ 21.000</strong>
@@ -162,7 +166,7 @@
             <div id="contenedor-accesorios">
                 <div class="servicio">
                     <div class="contenedor-imagen">
-                        <img src="img/accesorios/arnes.png" alt="accesorio" class="imagen-servicio">
+                        <img src="assets/img/accesorios/arnes.png" alt="accesorio" class="imagen-servicio">
                     </div>
                     <p class="descripcion">Arnes</p>
                     <strong class="precio">$ 11.300</strong>
@@ -170,7 +174,7 @@
                 </div>
                 <div class="servicio">
                     <div class="contenedor-imagen">
-                        <img src="img/accesorios/transportadora.png" alt="accesorio" class="imagen-servicio">
+                        <img src="assets/img/accesorios/transportadora.png" alt="accesorio" class="imagen-servicio">
                     </div>
                     <p class="descripcion">Transportadora</p>
                     <strong class="precio">$ 71.300</strong>
@@ -178,7 +182,7 @@
                 </div>
                 <div class="servicio">
                     <div class="contenedor-imagen">
-                        <img src="img/accesorios/collar.png" alt="accesorio" class="imagen-servicio">
+                        <img src="assets/img/accesorios/collar.png" alt="accesorio" class="imagen-servicio">
                     </div>
                     <p class="descripcion">Collar</p>
                     <strong class="precio">$ 11.300</strong>
@@ -186,7 +190,7 @@
                 </div>
                 <div class="servicio">
                     <div class="contenedor-imagen">
-                        <img src="img/accesorios/comedor.png" alt="accesorio" class="imagen-servicio">
+                        <img src="assets/img/accesorios/comedor.png" alt="accesorio" class="imagen-servicio">
                     </div>
                     <p class="descripcion">Comedero</p>
                     <strong class="precio">$ 11.300</strong>
@@ -204,14 +208,14 @@
     <footer>
         <div id="contenedor-iconos-footer">
             <ul id="lista-iconos-footer">
-                <li><a href="#"><img  class="icono-footer" src="img/iconos/llamada.png" alt="Teléfono" title="Teléfono"></a></li>
-                <li><a href="#"><img  class="icono-footer" src="img/iconos/instagram.png" alt="Instagram" title="Instagram"></a></li>
-                <li><a href="#"><img  class="icono-footer" src="img/iconos/facebook.png" alt="Facebook" title="Facebook"></a></li>
-                <li><a href="#"><img  class="icono-footer" src="img/iconos/correo-electronico.png" alt="Email" title="Email"></a></li>
-                <li><a href="#"><img  class="icono-footer" src="img/iconos/whatsapp-2.png" alt="Whatsapp" title="Whatsapp"></a></li>
-                <li><a href="#"><img  class="icono-footer" src="img/iconos/youtube.png" alt="Youtube" title="Youtube"></a></li>
-                <li><a href="#"><img  class="icono-footer" src="img/iconos/wechat.png" alt="Wechat" title="Wechat"></a></li>
-                <li><a href="#"><img  class="icono-footer" src="img/iconos/tik-tok.png" alt="TikTok" title="TikTok"></a></li>
+                <li><a href="#"><img  class="icono-footer" src="assets/icons/llamada.png" alt="Teléfono" title="Teléfono"></a></li>
+                <li><a href="#"><img  class="icono-footer" src="assets/icons/instagram.png" alt="Instagram" title="Instagram"></a></li>
+                <li><a href="#"><img  class="icono-footer" src="assets/icons/facebook.png" alt="Facebook" title="Facebook"></a></li>
+                <li><a href="#"><img  class="icono-footer" src="assets/icons/correo-electronico.png" alt="Email" title="Email"></a></li>
+                <li><a href="#"><img  class="icono-footer" src="assets/icons/whatsapp-2.png" alt="Whatsapp" title="Whatsapp"></a></li>
+                <li><a href="#"><img  class="icono-footer" src="assets/icons/youtube.png" alt="Youtube" title="Youtube"></a></li>
+                <li><a href="#"><img  class="icono-footer" src="assets/icons/wechat.png" alt="Wechat" title="Wechat"></a></li>
+                <li><a href="#"><img  class="icono-footer" src="assets/icons/tik-tok.png" alt="TikTok" title="TikTok"></a></li>
             </ul>
         </div>
         <h3>PET SHOP</h3>

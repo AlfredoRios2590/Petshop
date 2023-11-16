@@ -1,6 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;900&display=swap');
 
-.contenedor-formulario{
+header{
+    width: 100%;
+    height: 10rem;
+    background-color: black;
+}
+
+/********************************************** seccion seleccion **********************************************/
+h2{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#contenedor-seleccion{
+    margin: 5rem 0;
+    padding: 0 10rem;
+}
+
+.seleccion{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 5rem 0;
+    gap: 3rem;
+}
+
+.tipo-atencion{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 900;
+    margin: 2rem 0;
+    color: rgb(34, 33, 33);
+}
+
+#imagen-vet-domicilio,
+#imagen-clinica-vet{
+    width: 100%;
+    border-radius: .5rem;
+    margin-bottom: 3rem;
+}
+
+.img-seleccion{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.boton-seleccion{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: white;
+    background-color: blueviolet;
+    padding: 1rem;
+    border: none;
+    border-radius: .5rem;
+    width: 100%;
+}
+
+.boton-seleccion:hover{
+    filter: brightness(150%);
+}
+
+
+
+/********************************************** seccion formulario **********************************************/
+#contenedor-formulario{
+    display: none;
+}
+
+.tipo-formulario{
     display: flex;
     justify-content: center;
 }
@@ -19,7 +84,6 @@
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-size: 1.2rem;
-    color: white;
 }
 
 .campo-formulario label span{
@@ -53,14 +117,62 @@ input[type=number] {
 .contenedor-boton{
     display: flex;
     justify-content: space-between;
-    margin-top: 5rem;
 }
 
 .boton-formulario{
-    margin: 4rem 4rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: white;
+    width: 7rem;
+    margin: 2rem 4rem;
     cursor: pointer;
+    padding: 1rem;
+    border: none;
+    border-radius: .5rem;
 }
 
-.btn-limpiar{
+#btn-enviar{
+    background-color: blue;
+}
+
+#btn-limpiar{
     background-color: red;
+}
+
+.contenedor-boton-atras{
+    display: flex;
+    justify-content: center;
+}
+
+#btn-atras{
+    background-color: rgb(7, 80, 55);
+    width: 10rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+#btn-enviar:hover,
+#btn-limpiar:hover,
+#btn-atras:hover{
+    filter: opacity(.6);
+}
+
+
+
+@media(max-width: 540px){
+    header{
+        height: 14rem;
+    }
+    
+    #contenedor-seleccion{
+        padding: 0 5rem;
+    }
+
+    .tipo-atencion{
+        font-size: 2rem;
+    }
 }
