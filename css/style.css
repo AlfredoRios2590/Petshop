@@ -15,15 +15,15 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    padding: 20px; /* Puedes ajustar el espaciado según tus necesidades */
+    padding: 1rem 3.5rem;
 }
 
 #titulo{
     justify-content: center;
     font-family: 'Rubik', sans-serif;
     font-weight: 900;
-    font-size: 3rem;
-    margin: 0; /* Elimina el margen predeterminado del h1 */
+    font-size: 2.5rem;
+    margin: 0; /* elimina el margen predeterminado del h1 */
     color: aliceblue;
 }
 
@@ -36,11 +36,11 @@ header{
 
 .link-menu{
     text-decoration: none;
-    margin-left: 1.25rem; /* Puedes ajustar el espaciado entre los elementos del menú */
+    margin-left: 1.25rem;
     color: rgb(238, 247, 221);
     font-family: 'Gabarito', cursive;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 #imagen-header {
