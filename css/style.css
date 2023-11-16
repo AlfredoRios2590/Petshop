@@ -3,41 +3,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;900&display=swap');
 
 /****************************** Encabezado ******************************/
-
-#contenedor-header{
-    position: absolute;
-    top: 2rem;
+header{
+    position: relative;
 }
 
 #contenedor-titulo-menu{
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 10rem;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px; /* Puedes ajustar el espaciado según tus necesidades */
 }
 
 #titulo{
     justify-content: center;
     font-family: 'Rubik', sans-serif;
     font-weight: 900;
-    padding-left: 1rem;
+    font-size: 3rem;
+    margin: 0; /* Elimina el margen predeterminado del h1 */
     color: aliceblue;
 }
 
 #lista-menu{
-    padding: 0; /* por defecto tiene un padding izquierdo de 40 */
-    margin: auto;
     list-style: none;
-    display: flex; /* para que las imagenes se muestren en linea */
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .link-menu{
-    margin: 0 0.7rem;
     text-decoration: none;
+    margin-left: 1.25rem; /* Puedes ajustar el espaciado entre los elementos del menú */
     color: rgb(238, 247, 221);
     font-family: 'Gabarito', cursive;
     font-weight: 400;
     font-size: 1.5rem;
+}
+
+#imagen-header {
+    width: 100%;
+    display: block;
 }
 
 .link-menu:hover{
@@ -285,14 +293,12 @@ h5 a{
     /******************************* encabezado *******************************/
     
     header{
-        width: 100%;
         height: 14rem;
         background-color: black;
-        display: flex;
-        justify-content: center;
     }
 
     #titulo{
+        display: block;
         text-align: center;
     }
 
@@ -302,6 +308,10 @@ h5 a{
 
     #imagen-header{
         display: none;
+    }
+
+    #lista-menu{
+        justify-content: center;
     }
 
     .link-menu{
@@ -383,10 +393,7 @@ h5 a{
     }
 }
 
-@media(max-width: 320px){
-    html{
-        font-size: 4px;
-    }
+@media(max-width: 320px){    
 
     /******************************* contenido principal *******************************/
     #seccion-mapa{/* para que no apezca el carrusel y el mapa */
